@@ -1,0 +1,15 @@
+<form action="/api/createUser" method="POST">
+    <div class="mb-3">
+        <label for="userName" class="form-label">Name</label>
+        <input type="text" class="form-control" name="name" id="userName" aria-describedby="userName">
+    </div>
+    <div class="mb-3">
+        <label for="phone" class="form-label">Phone</label>
+        <input type="text" class="form-control" id="phone" name="phone">
+    </div>
+    <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="active_inactive">
+        <label class="form-check-label" for="active_inactive">Inactive</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Add User</button>
+</form>

@@ -1,0 +1,16 @@
+<form  method="POST" id="update_user_form">
+    <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="hidden" value="<%= user._id %>" name="_id">
+        <input type="text" name="name" class="form-control" value="<%= user.name %>" id="name" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+        <label for="phone" class="form-label">Phone</label>
+        <input type="text" name="phone" class="form-control" value="<%= user.phone %>" id="phone">
+    </div>
+    <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="active_inactive">
+        <label class="form-check-label" for="active_inactive">Inactive</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Update User</button>
+</form>

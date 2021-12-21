@@ -1,0 +1,10 @@
+<tbody>
+    <%for(var i=0; i < users.length; i++) {%>
+    <tr>
+        <td><%= i+1 %></td>
+        <td><%= users[i].name %></td>
+        <td><%= users[i].phone %></td>
+        <td><a href="/updateUser?id=<%= users[i]._id %>">edit</a> <a href="javascript:;" onclick="delUser('<%= users[i]._id %>')">delete</a></td>
+    </tr>
+    <% }%>
+</tbody>

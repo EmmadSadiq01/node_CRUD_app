@@ -1,0 +1,32 @@
+<!-- include header -->
+<%- include('includes/_header') %>
+    <!-- /include header -->
+
+    <!-- main side  -->
+    <main id="site-main">
+        <div class="container">
+            <div class="content">
+                <a href="/addUser" class="btn btn-success">add user</a>
+            </div>
+            <div class="users">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <!-- include header -->
+                    <%- include('includes/_tableData') %>
+                        <!-- /include header -->
+                </table>
+            </div>
+        </div>
+    </main>
+    <!-- /main side  -->
+
+    <!-- include header -->
+    <%- include('includes/_footer') %>
+        <!-- /include header -->
